@@ -21,9 +21,15 @@ and the data in the example would be:
 ```json
 {
   "VAR_NAME": "foo",
-  "OBJ.DATA.KEY_PROPERTY": "bar",
-  "your_name": "dva"
+  "OBJ.DATA.KEY_PROPERTY": "'bar'",
+  "your_name": "'dva'"
 }
+```
+
+the result will be:
+
+```
+ the variable foo = 'bar' || 'dva';
 ```
 
 that`s it;
